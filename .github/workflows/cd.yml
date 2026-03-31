@@ -9,7 +9,13 @@ permissions:
   contents: write
 
 env:
-  SITE_DIR: ./src
+  SITE_DIR: .
+
+jobs:
+  gh-pages-delivery:
+    name: Build and deliver to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
 
 jobs:
   gh-pages-delivery:
